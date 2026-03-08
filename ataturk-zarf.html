@@ -286,7 +286,7 @@
     z-index: 1;
   }
 
-  /* Gerçek fotoğraf */
+  /* fotoğraf */
   .photo-real {
     width: 100%;
     height: auto;
@@ -384,7 +384,7 @@
       <div class="env-right"></div>
       <div class="env-flap"></div>
 
-      <!-- Mühür: Osmanlı tarzı SVG -->
+      <!-- Mühür -->
       <div class="seal" id="seal">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <!-- Dış daire -->
@@ -417,7 +417,7 @@
   <button class="open-btn" id="openBtn">✦ Zarfı Aç ✦</button>
 </div>
 
-<!-- Mektup Modal -->
+<!-- Mektup -->
 <div class="letter" id="letter">
   <div class="letter-card">
     <button class="close-btn" id="closeBtn">✕</button>
@@ -426,7 +426,7 @@
 
     <div class="ornament-line">✦</div>
 
-    <!-- Gerçek Fotoğraf: Wikimedia Commons public domain -->
+    <!-- Fotoğraf -->
     <div class="photo-frame">
       <img
         class="photo-real"
@@ -480,11 +480,11 @@
   const closeBtn = document.getElementById('closeBtn');
 
   function openEnvelope() {
-    // 1. Zarfı aç
+    //  Zarfı aç
     envelope.classList.add('open');
     openBtn.classList.add('hidden');
 
-    // 2. Kısa beklemeden sonra mektubu göster
+    //  Kısa beklemeden sonra mektubu göster
     setTimeout(() => {
       letter.classList.add('visible');
 
